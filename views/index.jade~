@@ -1,0 +1,5 @@
+html
+    include layout.jade
+  body
+    h1 My Site
+    p Welcome to my super lame site.2
