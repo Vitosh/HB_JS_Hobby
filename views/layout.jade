@@ -1,11 +1,13 @@
 html
 head
-    title Visit Sofia
+    title Visit Sofia2
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='shortcut icon' href='/img/fav.ico')
     link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
     script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+
   body
     .container-fluid
       .row
@@ -34,6 +36,24 @@ nav.navbar.navbar-default
         li: a(href="/economics")
           i.fa.fa-star-o &nbsp;
           | Economics Tourism
+    ul.nav.navbar-nav.navbar-left
+        li.dropdown
+          a.dropdown-toggle(data-toggle='dropdown', href='#')
+              View Routes
+              span.caret
+              ul.dropdown-menu
+                li
+                    a(href='routeEconomic') Economic Route
+                li
+                    a(href='routeFun') Fun Route
+                li
+                    a(href='routeCultural') Cultural Route
+                li
+                    a(href='routeCombined') Combined Route
+    ul.nav.navbar-nav.navbar-left
+        li: a(href="/order")
+          i.fa.fa-star-o &nbsp;
+          | Order
     ul.nav.navbar-nav.navbar-right
         li: a(href="/about")
           i.fa.fa-shopping-cart &nbsp;
